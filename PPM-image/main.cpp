@@ -1,6 +1,9 @@
 #include <iostream>
 #include <cmath>
 
+#include "color.hpp"
+#include "vec3.hpp"
+
 /*
 Red increases from left - right;
 Blue reverse of Red;
@@ -19,14 +22,8 @@ int	main( void )
 		for (int i = 0; i < image_width; ++i)
 		{
 			auto	r = double(i) / (image_width - 1);
-			auto	b = 1.0 - r;
-			auto	g = double(j) / (image_height - 1);
-
-			auto	ir = int(255.999 * r);
-			auto	ig = int(255.999 * g);
-			auto	ib = int(255.999 * b);
-
-			std::cout << ir << ' ' << ig << ' ' << ib << '\n';
+			auto	pixel_color = color( r, double(j) / (image_height - 1), 1.0 - r);
+			write_color( std::cout, pixel_color );
 		}
 	}
 
