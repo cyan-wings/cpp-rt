@@ -1,7 +1,7 @@
 #ifndef __RAY_HPP__
 # define __RAY_HPP__
 
-# include "vec3.h"
+# include "vec3.hpp"
 
 class ray
 {
