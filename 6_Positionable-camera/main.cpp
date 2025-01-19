@@ -29,10 +29,13 @@ int	main( void )
 	cam.samples_per_pixel = 100;
 	cam.max_depth = 50;
 
-	cam.vfov = 20;
-	cam.lookfrom = point3(2,2.5,1);
+	cam.vfov = 90;
+	cam.lookfrom = point3(0,0,0);
 	cam.lookat   = point3(0,0,-1);
-	cam.vup      = vec3(0,0.5,0);
+	cam.vup      = vec3(0,1,0);
+
+	cam.defocus_angle = 0.0;
+	cam.focus_dist    = 1;
 
 	cam.render( world );
 	
