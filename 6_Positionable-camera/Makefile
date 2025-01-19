@@ -4,7 +4,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++11 -g
 IDIR = includes/
 IFLAGS = -I$(IDIR).
 
-NAME = materials
+NAME = positionable-camera
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
