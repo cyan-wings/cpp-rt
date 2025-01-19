@@ -1,5 +1,5 @@
 CXX = c++
-CXXFLAGS = -Wall -Wextra -std=c++11 -g
+CXXFLAGS = -Wall -Wextra -Werror -std=c++11 -g
 
 IDIR = includes/
 IFLAGS = -I$(IDIR).
